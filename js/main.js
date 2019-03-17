@@ -96,8 +96,10 @@
 			strings: typed_strings.split(','),
 			typeSpeed: 80,
 			backDelay: 1100,
-			backSpeed: 30
+			backSpeed: 20,
+			cursorChar: ' //'
 		});
+
 	}
 
 	/*--/ Testimonials owl /--*/
