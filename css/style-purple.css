@@ -23,13 +23,17 @@ h6 {
   color: #1e1e1e;
 }
 
+.l-title {
+  color: #8400ff;
+}
+
 a {
-  color: #1e1e1e;
+  color: white;
   transition: all 0.5s ease-in-out;
 }
 
 a:hover {
-  color: #8400ff;
+  color: #e3c5ff;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -612,14 +616,14 @@ a:hover {
 }
 
 .intro .overlay-itro {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: black;
   position: absolute;
   top: 0;
   left: 0px;
   padding: 0;
   height: 100%;
   width: 100%;
-  opacity: .9;
+  opacity: .95;
 }
 
 .intro .intro-title {
@@ -697,7 +701,12 @@ a:hover {
 
 .skill-mf .progress .progress-bar {
   height: .7rem;
-  background-color: #8400ff;
+  background-color: #8400ff !important;
+  color: #8400ff !important;
+}
+
+.progress-bar-purple {
+  background-color: #8400ff !important;
 }
 
 /*======================================

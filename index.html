@@ -15,14 +15,17 @@
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-purple.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Titillium+Web|Baloo+Chettan|Roboto+Mono" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -46,7 +49,7 @@
             <a class="nav-link js-scroll" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Projects</a>
+            <a class="nav-link js-scroll" href="#service">Projects and Skills</a>
           </li>
         </ul>
       </div>
@@ -55,14 +58,18 @@
   <!--/ Nav End /-->
 
   <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image" style="background-color: black">
-    <div class="overlay-itro"></div>
+  <div id="home" class="intro route">
+    <div class="overlay-itro"><div id="particle-container"></div></div>
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="intro-title mb-4">Ryan Mao</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">Rutgers University,Math,Computer Science</span><strong class="text-slider"></strong></p>
+          <div class="col">
+            <h1 class="intro-title mb-4 row">Ryan Mao</h1>
+            <p class="intro-subtitle row"><span id="ru-text"></span></p>
+            <p class="intro-subtitle row"><span id="cs-text"></span></p>
+            <p class="intro-subtitle row"><span id="math-text"></span></p>
+          </div>
         </div>
       </div>
     </div>
@@ -84,31 +91,24 @@
                   </div>
                   <div class="col-sm-6 col-md-7">
                     <div class="about-info">
-                      <p></p>
+                      <div class="counter-num title-s">GPA: <p class="counter subtitle-a">3.53</p>/4.00</div>
                     </div>
                   </div>
                 </div>
                 <div class="skill-mf">
-                  <p class="title-s">Skill</p>
-                  <span>HTML</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>CSS3</span> <span class="pull-right">75%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>PHP</span> <span class="pull-right">50%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
+                  <div class="card">
+                    <div class="card-header title-s">Rutgers University - NB</div>
+                    <div class="card-body subtitle-a">
+                      <div class="row container">
+                        <div class="col">
+                          <p>Bachelors of Science in Computer Science</p>
+                          <p>Bachelors of Arts in Mathematics</p>
+                        </div>
+                        <div class="cold-md-6">
+                          <img src="img/ru_shield.png" class="img-thumbnail rounded b-shadow-a" style="width: 75px; height: 95px;"></img>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -120,17 +120,13 @@
                     </h5>
                   </div>
                   <p class="lead">
-                    Currently an freshman studying at Rutgers University for a Bachelors of Science in Computer Science and a Bachelors of Arts in Math.
+                    Currently a freshman studying at Rutgers University for a Bachelors of Science in Computer Science and a Bachelors of Arts in Math.
                   </p>
                   <p class="lead">
-                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
-                    porttitor volutpat. Vestibulum
-                    ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+                    My interests are Artifical Intelligence, Machine Learning, and Data Science.
                   </p>
                   <p class="lead">
-                    Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                    Nulla porttitor accumsan
-                    tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                    My current objective is to find an internship or research opportunity that will give me practical experience in using my problem solving skills.
                   </p>
                 </div>
               </div>
@@ -148,10 +144,10 @@
         <div class="col-sm-12">
           <div class="title-box text-center">
             <h3 class="title-a">
-              Services
+              Projects and Skills
             </h3>
             <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              My personal projects and the skills I have acquired
             </p>
             <div class="line-mf"></div>
           </div>
@@ -161,14 +157,16 @@
         <div class="col-md-4">
           <div class="service-box">
             <div class="service-ico">
-              <span class="ico-circle"><i class="ion-monitor"></i></span>
+              <span class="ico-circle"><i class="fas fa-desktop"></i></span>
             </div>
             <div class="service-content">
               <h2 class="s-title">Web Design</h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
+                Through creating my first original website, to working on Moody during HackRU to revamping my website, I have become fairly competent regarding my ability for web design.
+                <p class="title-s">Comfortability:</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-purple" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </p>
             </div>
           </div>
@@ -176,14 +174,16 @@
         <div class="col-md-4">
           <div class="service-box">
             <div class="service-ico">
-              <span class="ico-circle"><i class="ion-code-working"></i></span>
+              <span class="ico-circle"><i class="fas fa-server"></i></span>
             </div>
             <div class="service-content">
               <h2 class="s-title">Web Development</h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
+                Similar to web design, I have experienced basic web development. However, I still believe there is still much for me to learn. I am eager to further refine my web development skills.
+                <p class="title-s">Comfortability:</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-purple" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </p>
             </div>
           </div>
@@ -191,60 +191,61 @@
         <div class="col-md-4">
           <div class="service-box">
             <div class="service-ico">
-              <span class="ico-circle"><i class="ion-camera"></i></span>
+              <span class="ico-circle"><i class="fas fa-code"></i></span>
             </div>
             <div class="service-content">
-              <h2 class="s-title">Photography</h2>
+              <h2 class="s-title">Software</h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
+                Most of my software experience comes from school projects. I have experience writing and implementing methods for my own data structures, and interacting with file input and output.
+                <p class="title-s">Comfortability:</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-purple" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-s">
+              Languages
+            </h3>
+            <p class="subtitle-s">
+              My comfortability with each individual language
+            </p>
+            <div class="container row">
+              <div class="col-md-4">
+                <div class="service-box">
+                  <h5 class="l-title">Java</h5>
+                  <p>I have the most experience in Java, as it was my first language.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-box">
+                  <h5 class="l-title">Python</h5>
+                  <p>I enjoy writing code in python, as it feels very straightforward.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-box">
+                  <h5 class="l-title">HTML/CSS</h5>
+                  <p>My experience HTML/CSS comes from personal projects/Moody</p>
+                </div>
+              </div>
             </div>
-            <div class="service-content">
-              <h2 class="s-title">Responsive Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-paintbrush"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Graphic Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-stats-bars"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Marketing Services</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
+            <div class="container row offset-2">
+              <div class="col-md-4">
+                  <div class="service-box">
+                    <h5 class="l-title">Javascript</h5>
+                    <p>I dabbled in javascript when doing DOM manipulation and some backend.</p>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="service-box">
+                  <h5 class="l-title">C/Assembly</h5>
+                  <p>I have just started learning C along with computer architecture.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -253,51 +254,35 @@
   </section>
   <!--/ Section Services End /-->
 
-  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
-    <div class="overlay-mf"></div>
+  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/nyc.jpg)">
+    <div class="overlay-mf" id="purple-particles"></div>
     <div class="container">
       <div class="row">
         <div class="col-sm-3 col-lg-3">
           <div class="counter-box">
             <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">450</p>
-              <span class="counter-text">WORKS COMPLETED</span>
+              <span class="ico-circle"><a href="https://www.linkedin.com/in/ryanmao725/" class="fab fa-linkedin"></a></span>
             </div>
           </div>
         </div>
         <div class="col-sm-3 col-lg-3">
           <div class="counter-box pt-4 pt-md-0">
             <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">15</p>
-              <span class="counter-text">YEARS OF EXPERIENCE</span>
+              <span class="ico-circle"><a href="https://github.com/ryanmao725" class="fab fa-github"></a></span>
             </div>
           </div>
         </div>
         <div class="col-sm-3 col-lg-3">
           <div class="counter-box pt-4 pt-md-0">
             <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-people"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">550</p>
-              <span class="counter-text">TOTAL CLIENTS</span>
+              <span class="ico-circle"><a href="https://www.facebook.com/ryan.mao.725" class="fab fa-facebook"></a></span>
             </div>
           </div>
         </div>
         <div class="col-sm-3 col-lg-3">
           <div class="counter-box pt-4 pt-md-0">
             <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">36</p>
-              <span class="counter-text">AWARD WON</span>
+              <span class="ico-circle"><a href="https://twitter.com/ryanmao725?lang=en" class="fab fa-twitter"></a></span>
             </div>
           </div>
         </div>
@@ -318,6 +303,7 @@
   <script src="lib/counterup/jquery.counterup.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/typed/typed.js"></script>
+  <script src="lib/particles/particles.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 

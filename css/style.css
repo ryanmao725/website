@@ -612,17 +612,18 @@ a:hover {
 }
 
 .intro .overlay-itro {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: black;
   position: absolute;
   top: 0;
   left: 0px;
   padding: 0;
   height: 100%;
   width: 100%;
-  opacity: .9;
+  opacity: .95;
 }
 
 .intro .intro-title {
+  font-family: "Titillium Web";
   color: #fff;
   font-weight: 600;
   font-size: 3rem;
@@ -635,6 +636,7 @@ a:hover {
 
 .intro .text-slider-items {
   display: none;
+  font-family: "Roboto Mono";
 }
 
 .intro-single {
