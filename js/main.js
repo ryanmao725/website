@@ -1,7 +1,7 @@
 (function ($) {
 	"use strict";
 	var nav = $('nav');
-  var navHeight = nav.outerHeight();
+	var navHeight = nav.outerHeight();
   
   $('.navbar-toggler').on('click', function() {
     if( ! $('#mainNav').hasClass('navbar-reduce')) {
@@ -97,22 +97,13 @@
 			typeSpeed: 80,
 			backDelay: 1100,
 			backSpeed: 20,
-			cursorChar: ' //'
+			cursorChar: '/',
+			onComplete: function () {
+				$(".text-slider").prepend("//");
+				$(".text-slider").append("//");
+				$(".typed-cursor").hide();
+			}
 		});
 
 	}
-
-	/*--/ Testimonials owl /--*/
-	$('#testimonial-mf').owlCarousel({
-		margin: 20,
-		autoplay: true,
-		autoplayTimeout: 4000,
-		autoplayHoverPause: true,
-		responsive: {
-			0: {
-				items: 1,
-			}
-		}
-	});
-
 })(jQuery);
